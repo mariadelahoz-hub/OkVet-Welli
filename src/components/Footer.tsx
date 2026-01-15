@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-8">
 
           <p className="text-white/50 text-sm text-center max-w-md">
-            Alianza estratégica para el crecimiento de veterinarias en Colombia
+            Alianza estratégica para el crecimiento de clínicas odontológicas en Colombia
           </p>
 
           {/* Links */}

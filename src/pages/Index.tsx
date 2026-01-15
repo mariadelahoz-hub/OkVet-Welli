@@ -1,26 +1,46 @@
+import { useState, useEffect } from "react";
+
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Benefits from "@/components/Benefits";
 import SocialProof from "@/components/SocialProof";
-import Urgency from "@/components/Urgency";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import HunterModal from "@/components/HunterModal";
 
 const Index = () => {
+  const [showHunterForm, setShowHunterForm] = useState(false);
+
+  // 🔒 Bloquear scroll cuando el modal está abierto
+  useEffect(() => {
+    document.body.style.overflow = showHunterForm ? "hidden" : "auto";
+  }, [showHunterForm]);
+
   return (
     <div className="min-h-screen">
-      <Header />
+      {/* HEADER */}
+      <Header onOpenForm={() => setShowHunterForm(true)} />
+
       <main>
-        <Hero />
+        <Hero onOpenForm={() => setShowHunterForm(true)} />
         <HowItWorks />
         <Benefits />
         <SocialProof />
         <FAQ />
-        <FinalCTA />
+
+        {/* CTA FINAL */}
+        <FinalCTA onOpenForm={() => setShowHunterForm(true)} />
       </main>
+
       <Footer />
+
+      {/* MODAL ÚNICO */}
+      <HunterModal
+        isOpen={showHunterForm}
+        onClose={() => setShowHunterForm(false)}
+      />
     </div>
   );
 };

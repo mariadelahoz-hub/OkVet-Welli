@@ -3,7 +3,7 @@ import { Star, Users, DollarSign, Clock } from "lucide-react";
 const metrics = [
   {
     icon: DollarSign,
-    value: "5,000+",
+    value: "25,000+",
     label: "Tratamientos financiados",
   },
   {

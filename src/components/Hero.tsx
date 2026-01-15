@@ -1,24 +1,13 @@
 import { MessageCircle, ExternalLink, CheckCircle, Zap } from "lucide-react";
-import welliLogo from "@/assets/welli-logo.webp";
-import dtDentalLogo from "@/assets/dt-dental-logo.png";
 import dentalImage from "@/assets/dental.jpg";
 
-const WHATSAPP_URL = "https://wa.me/573123195667";
+interface HeroProps {
+  onOpenForm: () => void;
+}
+
 const WELLI_URL = "https://www.welli.com.co";
 
-const Hero = () => {
-  const handleWhatsappClick = () => {
-    if (typeof window !== "undefined" && window._hsq) {
-      window._hsq.push([
-        "trackEvent",
-        {
-          id: "whatsapp_click_hero",
-          value: "cta_hero",
-        },
-      ]);
-    }
-  };
-
+const Hero = ({ onOpenForm }: HeroProps) => {
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center bg-white">
       {/* Background decorations */}
@@ -35,26 +24,26 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
             <Zap className="w-4 h-4 text-welli-turquoise" />
             <span className="text-sm font-medium text-gray/90">
-              Alianza exclusiva para clínicas veterinarias
+              Alianza exclusiva para clínicas odontológicas
             </span>
           </div>
 
-          {/* Hero content */}
+          {/* Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 mb-14 md:mb-20">
             <div className="flex justify-center md:justify-start">
               <img
                 src={dentalImage}
-                alt="Crecimiento para clínicas veterinarias"
+                alt="Crecimiento para clínicas odontológicas"
                 className="w-full max-w-md rounded-2xl shadow-2xl"
               />
             </div>
 
             <div className="text-center md:text-left">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray leading-tight mb-6">
-                Ofrece crédito a tus clientes sin asumir riesgos en tu veterinaria.
+                Únete a las +1,000 clínicas que ya eliminaron los presupuestos rechazados.
               </h1>
 
               <p className="text-lg md:text-xl text-gray/80 mb-8">
@@ -66,22 +55,21 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleWhatsappClick}
-              className="btn-cta !text-gray-800"
+            {/* 🔥 CTA PRINCIPAL → FORM */}
+            <button
+              onClick={onOpenForm}
+              className="btn-cta !text-gray-800 inline-flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5 !text-gray-800" />
               Contactar a un Hunter
-            </a>
+            </button>
 
+            {/* CTA SECUNDARIO */}
             <a
               href={WELLI_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary-hero !text-gray-700 border border-gray-500"
+              className="btn-secondary-hero !text-gray-700 border border-gray-500 inline-flex items-center gap-2"
             >
               Conocer Welli
               <ExternalLink className="w-4 h-4 !text-gray-700" />

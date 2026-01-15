@@ -33,7 +33,6 @@ const HowItWorks = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
 
 
-
           <span className="text-sm font-semibold text-accent uppercase tracking-wider mb-4 block">
             Proceso simple
           </span>
