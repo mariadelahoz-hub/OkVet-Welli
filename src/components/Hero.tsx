@@ -27,7 +27,7 @@ const Hero = ({ onOpenForm }: HeroProps) => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
             <Zap className="w-4 h-4 text-welli-turquoise" />
             <span className="text-sm font-medium text-gray/90">
-              Alianza exclusiva para clínicas odontológicas
+              Alianza exclusiva para clínicas veterinarias
             </span>
           </div>
 
@@ -36,14 +36,14 @@ const Hero = ({ onOpenForm }: HeroProps) => {
             <div className="flex justify-center md:justify-start">
               <img
                 src={dentalImage}
-                alt="Crecimiento para clínicas odontológicas"
+                alt="Crecimiento para clínicas veterinarias"
                 className="w-full max-w-md rounded-2xl shadow-2xl"
               />
             </div>
 
             <div className="text-center md:text-left">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray leading-tight mb-6">
-                Únete a las +1,000 clínicas que ya eliminaron los presupuestos rechazados.
+                Ofrece crédito a tus clientes sin asumir riesgos en tu veterinaria.
               </h1>
 
               <p className="text-lg md:text-xl text-gray/80 mb-8">
@@ -61,7 +61,7 @@ const Hero = ({ onOpenForm }: HeroProps) => {
               className="btn-cta !text-gray-800 inline-flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5 !text-gray-800" />
-              Contactar a un Hunter
+              Contactar a un asesor comercial
             </button>
 
             {/* CTA SECUNDARIO */}

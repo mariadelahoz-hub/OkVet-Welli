@@ -23,7 +23,7 @@ const FinalCTA = ({ onOpenForm }: FinalCTAProps) => {
           </h2>
 
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl mx-auto">
-            Un Hunter te contactará para explicarte todo el proceso y activar tu clínica en menos de 24 horas.
+            Un asesor comercial te contactará para explicarte todo el proceso y activar tu clínica en menos de 24 horas.
           </p>
 
           {/* 🔥 CTA → FORM */}
@@ -32,7 +32,7 @@ const FinalCTA = ({ onOpenForm }: FinalCTAProps) => {
             className="btn-cta text-lg px-8 py-5 inline-flex items-center gap-2"
           >
             <MessageCircle className="w-6 h-6" />
-            Contactar a un Hunter
+            Contactar a un asesor comercial
             <ArrowRight className="w-5 h-5" />
           </button>
 

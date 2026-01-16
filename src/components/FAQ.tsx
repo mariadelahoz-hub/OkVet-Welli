@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "¿Cuánto me cuesta usar Welli?",
-    answer: "Welli cobra una comisión por transacción que varía según el plazo del financiamiento. Un Hunter te dará los detalles exactos según el perfil de tu clínica. Muchas clínicas incluyen este costo en el precio del tratamiento.",
+    answer: "Welli cobra una comisión por transacción que varía según el plazo del financiamiento. Un asesor comercial te dará los detalles exactos según el perfil de tu clínica. Muchas clínicas incluyen este costo en el precio del tratamiento.",
   },
   {
     question: "¿Qué requisitos necesitan mis pacientes?",
