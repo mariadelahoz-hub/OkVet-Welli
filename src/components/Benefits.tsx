@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: TrendingUp,
     title: "Mayor tasa de aceptación",
-    description: "Ofrece cuotas accesibles y convierte presupuestos que antes se perdían. Aumenta hasta 40% tu cierre de ventas.",
+    description: "Ofrece cuotas accesibles y convierte más planes de tratamiento en ingresos para tu clínica. Aumenta hasta 40% tu cierre de ventas.",
     highlight: ">Conversión",
   },
   {

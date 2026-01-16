@@ -5,9 +5,9 @@ const steps = [
   {
     icon: FileText,
     number: "01",
-    title: "Crea el presupuesto",
+    title: "Crea el plan de tratamiento",
     description:
-      "Genera el presupuesto del tratamiento en OkVet como siempre lo haces.",
+    "Genera el plan de tratamiento en OkVet como siempre lo haces.",
   },
   {
     icon: CreditCard,
@@ -42,7 +42,7 @@ const HowItWorks = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground">
-            En 3 pasos conviertes más presupuestos en tratamientos realizados
+          En 3 pasos conviertes más planes de tratamiento en atenciones realizadas
           </p>
         </div>
 
