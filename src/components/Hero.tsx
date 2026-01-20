@@ -5,7 +5,7 @@ interface HeroProps {
   onOpenForm: () => void;
 }
 
-const WELLI_URL = "https://www.welli.com.co";
+const WELLI_URL = "https://www.welli.com.co/medicos";
 
 const Hero = ({ onOpenForm }: HeroProps) => {
   return (

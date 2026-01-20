@@ -2,7 +2,7 @@ import { ExternalLink } from "lucide-react";
 import welliLogo from "@/assets/welli-logo.webp";
 import dtDentalLogo from "@/assets/dt-dental-logo.png";
 
-const WELLI_URL = "https://www.welli.com.co";
+const WELLI_URL = "https://www.welli.com.co/medicos";
 const DTDENTAL_URL = "https://okvet.co";
 
 const Footer = () => {
