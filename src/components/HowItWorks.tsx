@@ -21,7 +21,7 @@ const steps = [
     number: "03",
     title: "Recibe tu dinero",
     description:
-      "Welli te desembolsa el 100% del tratamiento en máximo 72 horas. El paciente paga en cuotas.",
+      "Welli te desenbolsa en máximo 72 horas. El paciente paga en cuotas.",
   },
 ];
 
