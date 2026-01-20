@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "¿Qué requisitos necesitan mis pacientes?",
-    answer: "El proceso es 100% digital. Solo necesitan cédula de ciudadanía, un celular para verificación y ser mayores de edad. La aprobación es instantánea y no requiere codeudor.",
+    answer: "El proceso es 100% digital. Solo necesitan cédula de ciudadanía, un celular para verificación y ser mayores de edad. La respuesta es instantánea y no requiere codeudor.",
   },
   {
     question: "¿Cómo funciona la integración con OkVet?",
